@@ -1,0 +1,12 @@
+import math
+def printdivisors(n):
+    i=1
+    while i<=math.sqrt(n):
+        if(n%i==0):
+            if(n/i==i):
+                print(i,end=" ")
+            else:
+                print(i,int(n/i),end=" ")
+                i=i+1
+print("the divisors of 100 are:")
+printdivisors(100)
